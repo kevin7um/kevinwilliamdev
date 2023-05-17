@@ -1,0 +1,74 @@
+.btn{
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: $dark;
+
+    &.btn-primary{
+        background: $liner-gradient;
+        
+        transition: filter .3s;
+
+        &:hover{
+            filter: brightness(.7);
+        }
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 100%;
+    max-width: 20.7rem;
+    height: 24.4rem;
+    
+    background: linear-gradient(140.37deg, rgba(129, 242, 220, 0.69) -6.51%, rgba(129, 242, 220, 0.11) 103.44%);
+    backdrop-filter: blur(35px);
+    
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+
+    .image{
+        @include flex(row, center, center);
+        width: 18.7rem;
+        height: 14rem;
+
+        img{
+            width: 6.8rem;
+            height: 6.8rem;
+        }
+    }
+    
+    strong{
+        font-weight: 600;
+        font-size: 2.4rem;
+        letter-spacing: -0.01em;
+
+        color: $white;
+    }
+}
+
+.title-duplo{
+    font-weight: 600;
+    font-size: 4.8rem;
+    letter-spacing: -0.01em;
+    color: $white;
+
+    span{
+        display: block;
+        font-size: 3.6rem;
+        letter-spacing: -0.05em;
+        color: #373737;
+    }
+}
