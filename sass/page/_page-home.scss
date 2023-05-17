@@ -247,8 +247,6 @@
         max-width: 124.6rem;
         padding: 0 1.5rem;
 
-        font-family: 'IBM Plex Mono';
-        font-weight: 600;
         font-size: 6.4rem;
         line-height: 11.2rem;
         letter-spacing: -0.01em;
@@ -266,24 +264,35 @@
         height: 80rem;
         width: 100%;
 
-        @include flex(row, center, space-between);
+        @include flex(row, center, flex-start);
 
         .left-area{
             @include flex(row, center, center);
+            max-width: 60%;
             flex: 1;
             height: 100%;
             background: $brand-cyan-green;
+
+            .image{
+                width: 100%;
+                .area-img{
+                    max-width: 85%;
+                    display: flex;
+                    justify-content: end;
+                }
+            }
         }
         .right-area{
-            max-width: 94.7rem;
+            max-width: 40%;
             height: 100%;
             flex: 1;
             padding: 0 4rem;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background: $white;
             
             .text-content{
+                max-width: 94.7rem;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
