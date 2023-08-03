@@ -1,74 +1,108 @@
-.btn{
-    width: 20rem;
-    height: 5rem;
+.btn-primary{
+    position: relative;
+    width: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    color: $dark;
-
-    &.btn-primary{
-        background: $liner-gradient;
-        
-        transition: filter .3s;
-
-        &:hover{
-            filter: brightness(.7);
-        }
-    }
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
+    padding: 1rem 2.4rem;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
-    
-    width: 100%;
-    max-width: 20.7rem;
-    height: 24.4rem;
-    
-    background: linear-gradient(140.37deg, rgba(129, 242, 220, 0.69) -6.51%, rgba(129, 242, 220, 0.11) 103.44%);
-    backdrop-filter: blur(35px);
-    
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 16px;
+    gap: 2.4rem; 
 
-    .image{
-        @include flex(row, center, center);
-        width: 18.7rem;
-        height: 14rem;
-
-        img{
-            width: 6.8rem;
-            height: 6.8rem;
-        }
-    }
-    
-    strong{
-        font-weight: 600;
-        font-size: 2.4rem;
-        letter-spacing: -0.01em;
-
-        color: $white;
-    }
-}
-
-.title-duplo{
-    font-weight: 600;
-    font-size: 4.8rem;
-    letter-spacing: -0.01em;
-    color: $white;
+    border: solid 1px $white;
 
     span{
-        display: block;
-        font-size: 3.6rem;
-        letter-spacing: -0.05em;
-        color: #373737;
+        text-transform: uppercase;
+        color: $white;
+        transition: all .3s ease;
+        z-index: 1;
+    }
+    svg{
+        z-index: 1;
+        path{
+            transition: all .9s ease;
+        }
+    }
+
+    &:hover{
+        span{
+            color: $dark;
+        }
+        svg{
+            path{
+                fill: $dark;
+            }
+        }
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        z-index: 0;
+        background: $liner-gradient;
+        transition: .3s ease-out all;
+
+        
+    }
+
+    &:hover::after{
+        width: 100%;
+        color: $dark;
+        transition: .5s ease-in all;
+    }
+
+    &.btn2{
+        border: solid 1px $brand-green;
+
+        span{
+            color: $dark;
+        }
+        svg{
+            path{
+                fill: $dark;
+            }
+        }
+
+        &:hover{
+            span{
+                color: $dark;
+            }
+            svg{
+                path{
+                    fill: $dark;
+                }
+            }
+        }
+    }
+
+    &.black{
+        border: solid 1px $dark;
+
+        span{
+            color: $dark;
+        }
+        svg{
+            path{
+                fill: $dark;
+            }
+        }
+
+        &::after{
+            background: $dark;
+        }
+
+        &:hover{
+            span{
+                color: $white;
+            }
+            
+            svg{
+                path{
+                    fill: $white;
+                }
+            }
+        }
     }
 }

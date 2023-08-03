@@ -8,230 +8,283 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./css/plugins.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&family=Inter:wght@300;400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
 
-    <title>Kevin William</title>
+    <title>Kevin William | Início</title>
 </head>
-<body>
-    <header>
+<body id="body">
+    <div class="overlay"></div>
+    <header class="header mobile-header" id="js-header">
         <div class="container">
-            <a href="/" class="logo-header">
-                <img src="./assets/logo-white.png" alt="Logo K">
-            </a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Cases</a></li>
-                    <li><a href="#">Orçamento</a></li>
-                </ul>
-            </nav>
+            <div class="image">
+                <img src="./assets/logo-white.svg" alt="Logo-Header" title="Logo-Header" class="logo">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="js-nav-menu">
+                        <li><a href="/" id="#home">Home</a></li>
+                        <li><a href="#sobre" id="#sobre">Quem sou</a></li>
+                        <li><a href="#projetos" id="#projetos">Meus Projetos</a></li>
+                        <li><a href="#contato" id="#contato">Entre em Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-call-to-action">Orçamento</button>
+            </div>
+            <button class="btnMenuMobile" id="js-btnMenuMobile">
+                <img src="./assets/icon/ButtonMenuMobile.svg" class="open" alt="Menu Mobile">
+                <img src="./assets/icon/ButtonCloseMenuMobile.svg" class="close" alt="Menu Mobile">
+            </button>
         </div>
     </header>
 
-    <section class="s-hero">
-        <div class="container">
-            <div class="left-area">
-                <div class="title-hero">
-                    <h3><span>Olá, eu sou</span> Kevin William!</h3>
-                    <h1>Especialista em desenvolvimento Front-end</h1>
-                    <h2>Desenvolvedor Front-end</h2>
-                </div>
-                <div class="local">
-                    <img src="./assets/icon-local.png" alt="Icon Local">
-                    <span>Minas Gerais - Brasil</span>
-                </div>
-                <a href="#" class="btn btn-primary">Inicar</a>
-            </div>
-            <div class="right-area">
-                <div class="social-links">
-                    <ul>
-                        <li><a href="#" class="icon-social">
-                            <img src="./assets/icon-github.png" alt="Icon Github" title="Github">
-                        </a></li>
-                        <li><a href="#" class="icon-social">
-                            <img src="./assets/icon-linkedin.png" alt="Icon Linkedin" title="Linkedin">
-                        </a></li>
-                        <li><a href="#" class="icon-social">
-                            <img src="./assets/icon-instagram.png" alt="Icon Instagram" title="Instagram">
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-tags">
-        <ul class="tags">
-            <li>Interface</li>
-            <li>Front-end Developer</li>
-            <li>Pixel Perfect</li>
-            <li>Animation</li>
-            <li>Website</li>
-            <li>Interface</li>
-            <li>Front-end Developer</li>
-            <li>Pixel Perfect</li>
-            <li>Animation</li>
-            <li>Website</li>
-            <li>Interface</li>
-            <li>Front-end Developer</li>
-            <li>Pixel Perfect</li>
-            <li>Animation</li>
-            <li>Website</li>
-            <li>Interface</li>
-            <li>Front-end Developer</li>
-            <li>Pixel Perfect</li>
-            <li>Animation</li>
-            <li>Website</li>
-        </ul>
-    </section>
-
-    <section class="s-info">
-        <div class="container">
-            <h2>Responsável por transformar ideias em interfaces incríveis!</h2>
-            <div class="content-card">
+    <main>
+        <section class="s-hero" id="home">
+            <div class="container">
                 <div class="left-area">
-                    <h3>Desenvolvendo Projetos</h3>
+                    <div class="text-hero">
+                        <h1 class="headline">Headline</h1>
+                        <p class="description-hero">
+                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
+                            Risus facilisis nisl amet eu pellentesque sem congue. 
+                            Sit tincidunt mauris id vitae at in magna aliquet.
+                        </p>
+                    </div>
+                    <div class="local-hero">
+                        <div class="icon-local">
+                            <img src="./assets/icon/localizacao.svg" alt="Icone-Localizacao" title="Icone Localizacao">
+                        </div>
+                        <span>Minas Gerais - Brasil</span>
+                    </div>
                 </div>
                 <div class="right-area">
-                    <div class="card">
-                        <div class="image">
-                            <img src="./assets/projetos-modernos.png" alt="Projetos Modernos" title="Projetos Modernos">
+                    <div class="illustration-hero">
+                        <img src="./assets/illustration-hero.svg" alt="Ilustracao-Hero" title="Ilustracao-Hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="s-quemSou" id="sobre">
+            <div class="container">
+                <div class="left-area">
+                    <div class="image-sobre">
+                        <img src="./assets/example-image.jpg" alt="Image-Pessoal" title="Image-Pessoal">
+                    </div>
+                </div>
+                <div class="right-area">
+                    <div class="text-sobre">
+                        <h2 class="subtitle">Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. 
+                            Arcu est eget magna hendrerit. Risus facilisis nisl amet eu pellentesque sem congue. 
+                            Sit tincidunt mauris id vitae at in magna aliquet.
+                        </p>
+                    </div>
+                    <div class="details-sobre">
+                        <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
+                        <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+        <section class="s-atuacao" id="atuacao">
+            <div class="container">
+                <img src="./assets/circle-atuacao.png" class="bg-atuacao" alt="Circlo Ilustração" title="Circlo Ilustração">
+                <div class="left-area">
+                    <div class="text-atuacao">
+                        <h2 class="subtitle">Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
+                            Risus facilisis nisl amet eu pellentesque sem congue. 
+                            Sit tincidunt mauris id vitae at in magna aliquet.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-area">
+                    <div class="text-atuacao">
+                        <h2 class="subtitle">Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
+                            Risus facilisis nisl amet eu pellentesque sem congue. 
+                            Sit tincidunt mauris id vitae at in magna aliquet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="s-projetos" id="projetos">
+            <!-- Adicionar as letras como background no css e as sombras como affter e before -->
+            <div class="container">
+                <div class="box-bluer">
+                    <div class="left-area">
+                        <img src="./assets/illustration-project.svg" alt="Ilustracao-Projetos" title="Ilustracao-Projetos">
+                    </div>
+                    <div class="right-area">
+                        <div class="text-projetos">
+                            <h2 class="subtitle white">Projetos</h2>
+                            <h3>Subtitle</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
+                                Risus facilisis nisl amet eu pellentesque sem congue. 
+                                Sit tincidunt mauris id vitae at in magna aliquet.
+                            </p>
                         </div>
-                        <strong>Modernos</strong>
+                        <a href="./pages/projetos/index.html" class="btn-primary">
+                            <span>Ver Projetos</span>
+                            <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.8541 9.35378L26.8541 5.35378C26.9006 5.30735 26.9375 5.2522 26.9627 5.19151C26.9878 5.13081 27.0008 5.06574 27.0008 5.00003C27.0008 4.93433 26.9878 4.86926 26.9627 4.80856C26.9375 4.74787 26.9006 4.69272 26.8541 4.64628L22.8541 0.646284C22.7603 0.552464 22.6331 0.499756 22.5004 0.499756C22.3677 0.499756 22.2405 0.552464 22.1466 0.646284C22.0528 0.740104 22.0001 0.867352 22.0001 1.00003C22.0001 1.13272 22.0528 1.25996 22.1466 1.35378L25.2929 4.50003H1.70789V5.00003V5.50003H25.2929L22.1466 8.64628C22.0528 8.7401 22.0001 8.86735 22.0001 9.00003C22.0001 9.13272 22.0528 9.25996 22.1466 9.35378C22.2405 9.44761 22.3677 9.50031 22.5004 9.50031C22.6331 9.50031 22.7603 9.44761 22.8541 9.35378Z" fill="white"/>
+                                <path d="M0.0381136 5.19151C0.0632757 5.2522 0.100155 5.30735 0.146643 5.35378C0.262801 5.46502 0.33965 5.49904 0.5 5.50003H1.70789V5.00003V4.50003L0.5 4.49976C0.352579 4.50708 0.228666 4.56435 0.146643 4.64628C0.100155 4.69272 0.0632757 4.74787 0.0381136 4.80856C0.0129514 4.86926 0 4.93433 0 5.00003C0 5.06574 0.0129514 5.13081 0.0381136 5.19151Z" fill="white"/>
+                            </svg> 
+                        </a>                    
                     </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="./assets/projetos-dinamicos.png" alt="Projetos Dinâmicos" title="Projetos Dinâmicos">
+                </div>
+            </div>
+        </section>
+    
+        <section class="s-contato" id="contato">
+            <div class="container">
+                <div class="top-area">
+                    <h2 class="subtitle">Title Section</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. </p>
+                </div>
+                <div class="bottom-area">
+                    <div class="form-container">
+                        <div class="form">
+                            <div class="form-group">
+                                <div class="input-item">
+                                    <label for="name">Seu nome</label>
+                                    <input type="text" placeholder="Digite seu nome" id="name">
+                                </div>
+                                <div class="input-item">
+                                    <label for="email">Seu e-mail</label>
+                                    <input type="email" placeholder="Digite seu e-mail" id="email">
+                                </div>
+                                <div class="input-item">
+                                    <label for="tel">Contato Whatsapp</label>
+                                    <input type="tel" placeholder="(00) 0 0000-0000" id="tel">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-item">
+                                    <label for="mensage">Mensagem</label>
+                                    <textarea 
+                                        name="msg" 
+                                        id="mensage"
+                                        placeholder="Olá, eu estou precisando de seus serviços de desenvolvimento de websites para Company X. Poderia entrar em contato para discutir sobre?">
+                                    </textarea>
+                                </div>
+                            </div>
                         </div>
-                        <strong>Dinâmicos</strong>
+                        <button class="btn-primary btn2">
+                            <span>Enviar</span>
+                            <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.8541 9.35378L26.8541 5.35378C26.9006 5.30735 26.9375 5.2522 26.9627 5.19151C26.9878 5.13081 27.0008 5.06574 27.0008 5.00003C27.0008 4.93433 26.9878 4.86926 26.9627 4.80856C26.9375 4.74787 26.9006 4.69272 26.8541 4.64628L22.8541 0.646284C22.7603 0.552464 22.6331 0.499756 22.5004 0.499756C22.3677 0.499756 22.2405 0.552464 22.1466 0.646284C22.0528 0.740104 22.0001 0.867352 22.0001 1.00003C22.0001 1.13272 22.0528 1.25996 22.1466 1.35378L25.2929 4.50003H1.70789V5.00003V5.50003H25.2929L22.1466 8.64628C22.0528 8.7401 22.0001 8.86735 22.0001 9.00003C22.0001 9.13272 22.0528 9.25996 22.1466 9.35378C22.2405 9.44761 22.3677 9.50031 22.5004 9.50031C22.6331 9.50031 22.7603 9.44761 22.8541 9.35378Z" fill="white"/>
+                                <path d="M0.0381136 5.19151C0.0632757 5.2522 0.100155 5.30735 0.146643 5.35378C0.262801 5.46502 0.33965 5.49904 0.5 5.50003H1.70789V5.00003V4.50003L0.5 4.49976C0.352579 4.50708 0.228666 4.56435 0.146643 4.64628C0.100155 4.69272 0.0632757 4.74787 0.0381136 4.80856C0.0129514 4.86926 0 4.93433 0 5.00003C0 5.06574 0.0129514 5.13081 0.0381136 5.19151Z" fill="white"/>
+                            </svg> 
+                        </button>
                     </div>
-                    <div class="card">
-                        <div class="image">
-                            <img src="./assets/projetos-responsivos.png" alt="Projetos Responsivos" title="Projetos Responsivos">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer-js">
+        <div class="container">
+            <div class="top-area">
+                <div class="link-group">
+                    <a href="#" class="link-content">
+                        <div class="icon-link">
+                            <img src="./assets/icon/InstagramLogo.svg" alt="Icone-Instagram" title="Icone-Instagram">
                         </div>
-                        <strong>Responsivos</strong>
+                        <span class="t-link">Instagram</span>
+                    </a>
+                    <a href="#" class="link-content">
+                        <div class="icon-link">
+                            <img src="./assets/icon/LinkedinLogo.svg" alt="Icone-Linkedin" title="Icone-Linkedin">
+                        </div>
+                    <span class="t-link">Linkedin</span>
+                    </a>
+                </div>
+                <div class="link-group">
+                    <a href="#" class="link-content">
+                        <div class="icon-link">
+                            <img src="./assets/icon/GithubLogo.svg" alt="Icone-Github" title="Icone-Github">
+                        </div>
+                        <span class="t-link">Github</span>
+                    </a>
+                    <a href="#" class="link-content">
+                        <div class="icon-link">
+                            <img src="./assets/icon/ReadCvLogo.svg" alt="Icone-Resume" title="Icone-Resume">
+                        </div>
+                        <span class="t-link">Resume.pdf</span>
+                    </a>
+                </div>
+                <div class="link-group">
+                    <a href="#" class="link-content">
+                        <div class="icon-link">
+                            <img src="./assets/icon/ChatTeardropText.svg" alt="Icone-Chat" title="Icone-Chat">
+                        </div>
+                        <span class="t-link">Contato Profissional</span>
+                    </a>
+                </div>
+            </div>
+            <div class="middle-area">
+                <div class="left-area">
+                    <img src="./assets/logo-white.svg" alt="Logo-Footer" title="K">
+                    <h3>Kevin William</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. </p>
+                    <p>Sit tincidunt mauris id vitae at in magna aliquet.</p>
+                </div>
+                <div class="right-area">
+                    <h3>Risus facilisis nisl amet</h3>
+                    <div class="contato-footer">
+                        <div class="icon-contato-footer">
+                            <img src="./assets/icon/PaperPlaneTilt.svg" alt="Icone-Mensagem" title="Icone-Mensagem">
+                        </div>
+                        <span class="t-link">contato@kevinwilliam.com.br</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="s-about">
-        <div class="container">
-            <div class="left-area">
-                <div class="image">
-                    <img src="./assets/bg-profile.png" alt="Background Profile">
+            <div class="bottom-area">
+                <div class="left-area">
+                    <img src="./assets/logo-completa-gradient.svg" alt="Logo-Nome" alt="Kevin William">
+                    <span>Portifólio Kevin William ® 2023</span>
                 </div>
-            </div>
-            <div class="right-area">
-                <h2 class="title-duplo">
-                    <span>Quem sou eu...</span>
-                    Kevin William
-                </h2>
-                <p>
-                    Front-end Developer com base em Minas Gerais - Brasil. <br>
-                    Há 2 anos codificando interfaces incríveis, combinando design intuitivo, animações suaves e interatividade inteligente. <br>
-                    Sempre buscando evoluir e alcaçar o próximo nível no desenvolvimento de interfaces.
-                </p>
-                <ul class="info">
-                    <li>
-                        <img src="./assets/icon-trinco.png" alt="Icon Trinco">
-                        <span>Freelancer Developer</span>
-                    </li>
-                    <li>
-                        <img src="./assets/icon-trinco.png" alt="Icon Trinco">
-                        <span>Sistema da Informação pelo IFSEMG (Cursando)</span>
-                    </li>
-                    <li>
-                        <img src="./assets/icon-trinco.png" alt="Icon Trinco">
-                        <span>Aprofundando os conhecimentos com o pessoal da Rocketseat e Codeboost.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-cases">
-        <h2 class="title">Meus Cases</h2>
-        <div class="cases-container">
-            <div class="left-area">
-                <div class="image">
-                    <div class="area-img">
-                        <img src="./assets/case1.png" alt="Case 1">
+                <div class="right-area">
+                    <div class="social-group">
+                        <a href="#"  class="social-item text">
+                            <div class="icon-social-footer">
+                                <img src="./assets/icon/InstagramLogo.svg" alt="Icone-Instagram" title="Icone-Instagram">
+                            </div>
+                            <span>@kevinwilliam.dev</span>
+                        </a>
+                        <a href="#" class="social-item text">
+                            <div class="icon-social-footer">
+                                <img src="./assets/icon/PlayContrate.svg" alt="Icone-Contrate" title="Icone-Contrate">
+                            </div>
+                            <span>Contrate-me</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <div class="icon-social-footer">
+                                <img src="./assets/icon/LinkedinLogo.svg" alt="Icone-Linkedin" title="Icone-Linkedin">
+                            </div>
+                        </a>
+                        <a href="#" class="social-item">
+                            <div class="icon-social-footer">
+                                <img src="./assets/icon/GithubLogo.svg" alt="Icone-Github" title="Icone-Github">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="right-area">
-                <div class="text-content">
-                    <h2>Landing Page Neon</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, laudantium fugit nostrum placeat temporibus incidunt cupiditate. Modi velit at exercitationem, omnis eveniet perspiciatis facere dolores sit quis, incidunt a dicta.</p>
-                    <a href="#" class="btn">Acessar projeto</a>
-                </div>
-            </div>
-        </div>
-        <div class="cases-container">
-            <div class="left-area">
-                <div class="image">
-                    <div class="area-img">
-                        <img src="./assets/case1.png" alt="Case 1">
-                    </div>
-                </div>
-            </div>
-            <div class="right-area">
-                <div class="text-content">
-                    <h2>Landing Page Neon</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, laudantium fugit nostrum placeat temporibus incidunt cupiditate. Modi velit at exercitationem, omnis eveniet perspiciatis facere dolores sit quis, incidunt a dicta.</p>
-                    <a href="#" class="btn">Acessar projeto</a>
-                </div>
-            </div>
-        </div>
-        <div class="cases-container">
-            <div class="left-area">
-                <div class="image">
-                    <div class="area-img">
-                        <img src="./assets/case1.png" alt="Case 1">
-                    </div>
-                </div>
-            </div>
-            <div class="right-area">
-                <div class="text-content">
-                    <h2>Landing Page Neon</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, laudantium fugit nostrum placeat temporibus incidunt cupiditate. Modi velit at exercitationem, omnis eveniet perspiciatis facere dolores sit quis, incidunt a dicta.</p>
-                    <a href="#" class="btn">Acessar projeto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-orcamento">
-        <div class="container">
-            <h2>Sua presença online merece o melhor!</h2>
-            <p>Entre em contato hoje mesmo para discutir seu projeto e obter um orçamento personalizado. Juntos, podemos criar um site que impressionará seus clientes e impulsionará seu negócio para o sucesso online.</p>
-            <div class="form">
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Nome Completo">
-                    </div>
-                    <div class="input-box">
-                        <input type="tel" placeholder="Whatsapp">
-                    </div>
-                    <div class="input-box">
-                        <button class="btn btn-primary">Solicitar Orçamento</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Copyright 2023 - Todos os direitos reservados a <strong>Kevin William</strong></p>
-            <img class="logo-footer" src="./assets/logo-kw.png" alt="Logo Footer">
         </div>
     </footer>
 
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/plugins.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

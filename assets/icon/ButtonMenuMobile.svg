@@ -1,0 +1,21 @@
+<svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Bot&#195;&#163;o Menu Mobile">
+<line id="Line 1" y1="1.75" x2="30" y2="1.75" stroke="url(#paint0_linear_835_408)" stroke-width="3"/>
+<path id="Line 2" d="M5 7.75H30" stroke="url(#paint1_linear_835_408)" stroke-width="3"/>
+<path id="Line 3" d="M10 13.75H30" stroke="url(#paint2_linear_835_408)" stroke-width="3"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_835_408" x1="0" y1="3.75" x2="30" y2="3.75" gradientUnits="userSpaceOnUse">
+<stop stop-color="#81F2DC"/>
+<stop offset="1" stop-color="#B3F79A"/>
+</linearGradient>
+<linearGradient id="paint1_linear_835_408" x1="5" y1="8.25" x2="30" y2="8.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#81F2DC"/>
+<stop offset="1" stop-color="#B3F79A"/>
+</linearGradient>
+<linearGradient id="paint2_linear_835_408" x1="10" y1="14.25" x2="30" y2="14.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#81F2DC"/>
+<stop offset="1" stop-color="#B3F79A"/>
+</linearGradient>
+</defs>
+</svg>

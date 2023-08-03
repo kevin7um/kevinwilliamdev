@@ -1,35 +1,193 @@
 header{
-    height: 7rem;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(15, 15, 15, 0.5);
-    backdrop-filter: blur(40px);
-    filter: drop-shadow(0px 10px 10px rgba(15, 15, 15, 0.7));
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: $height-header;    
+    background: $dark;
+
+    @include flex(row, center, center);
+
     .container{
         @include flex(row, center, space-between);
     }
 
-    nav{
-        ul{
-            @include flex(row, center, space-between);
-            gap: 5rem;
-            
-            li{
-                a{
-                    font-weight: 600;
-                    font-size: 2rem;
-                    line-height: 150%;
-                    letter-spacing: -0.05em;
-                    color: $brand-cyan-green;
-                    transition: filter .3s;
+    .image{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
 
-                    &:hover{
-                        filter: brightness(.7);
+        nav{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 2.4rem;
+                align-self: stretch; 
+
+                li{
+                    a{
+                        position: relative;
+                        color: $white;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        line-height: 150%; /* 2.4rem */
+                        letter-spacing: 0.08rem; 
+                        text-transform: uppercase;
+                        animation: borderEffect .2s linear;
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: -.8rem;
+                            left: 50%;
+                            height: 2px;
+                            width: 0;
+                            background: $liner-gradient;
+                            transition: .3s ease all;
+                        }
+                        &:hover:before{
+                            width: 100%;
+                            left: 0;
+                            border-radius: 8px;
+                            transition: .2s ease all;
+                        }
+
+                        &.active::before{
+                            width: 100%;
+                            left: 0
+                        }
                     }
+                }
+            }
+        }
+
+        .btn-call-to-action{
+            @include flex(row, center, center);
+            padding: 1rem 1.6rem;
+            border-radius: .4rem;
+            background: $liner-gradient;
+
+            color: $dark;
+            font-weight: 600;
+            transition: all .3s ease;
+
+            &:hover{
+                filter: brightness(.9);
+            }
+        }
+    }
+
+    .btnMenuMobile{
+        display: none;
+    }
+
+
+    // Efeito quando der scroll na página
+    &.fixed-menu{
+        background: linear-gradient(180deg, rgba(15, 15, 15, 0.70) 0%, rgba(15, 15, 15, 0.30) 100%);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.40); 
+    }
+
+    // Breakpoints
+
+    @include responsive(800px){
+        .container{
+            .btnMenuMobile{
+                width: 3.2rem;
+                height: 3.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 100%;
+                }
+
+                .close{
+                    display: none;
+                }
+
+                &.is-active{
+                    .open{
+                        display: none;
+
+                    }
+                    .close{
+                        display: block;
+                        width: 2.4rem;
+
+                    }
+                }
+            }
+        }
+
+        &.mobile-header{
+            .menu{
+                z-index: 2024;
+                position: fixed;
+                top: 0; 
+                left: -65%;  
+                height: 100vh;
+                width: 65%; 
+                padding: 4rem 1.5rem;
+                background-color: $dark; 
+    
+                flex-direction: column;
+                align-items: flex-start;
+    
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: all .3s ease;
+    
+                nav{
+                    ul{
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(500px){
+        height: 6rem;
+
+        .image{
+            width: 3.2rem;
+        }
+    }
+    
+}
+
+.menuOpened{
+    body{
+        overflow: hidden;
+        .overlay{
+            display: block;
+        }
+
+        header{
+            &.mobile-header{
+                .menu{
+                    left: 0;
+                    transform: translateX(0%);
+                    transition: all .5s ease;
+                    opacity: 1;
+                }
+                .btnMenuMobile{
+                    position: fixed;
+                    top: 1.5rem;
+                    right: 1rem;
+                    z-index: 3;
                 }
             }
         }

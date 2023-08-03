@@ -38,6 +38,13 @@ gulp.task('all-js', gulpJs);
 function pluginsCss(){
     return gulp.src('./css/lib/*.css')
     .pipe(concat('plugins.css'))
+    .pipe(sass({
+        outputStyle : 'compressed'
+    }))
+    .pipe(autoprefixer({
+        overrideBrowserslist : ['last 2 versions'],
+        cascade : false,
+    }))
     .pipe(gulp.dest('css/'))
     .pipe(browserSync.stream());
 }
@@ -46,9 +53,12 @@ gulp.task('plugins-css', pluginsCss);
 
 function pluginsJs() {
     return gulp.src([
+        './js/lib/locomotive-scroll.min.js',
+        './js/lib/particles.min.js',
         './js/lib/plugin.js',
     ])
     .pipe(concat('plugins.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./js/'))
     .pipe(browserSync.stream());
 }

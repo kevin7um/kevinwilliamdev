@@ -1,8 +1,19 @@
+// Neutras
 $dark: #0F0F0F;
 $white: #FFFFFF;
+$gray: #2C2C2C;
+
+// Brand
 $brand-green: #B3F79A;
 $brand-cyan-green: #81F2DC;
 $brand-cyan-green-opacity: rgba(31, 192, 160, 0.16);
+
+// Texto
 $text-color-body: rgba(255, 255, 255, 0.7);
-$text-color-title-alternative: #373737;
+$text-color-alternative: #373737;
+
+// Gradient
 $liner-gradient: linear-gradient(90deg, #81F2DC 0%, #B3F79A 100%);
+$box-bluer: linear-gradient(135deg, rgba(30, 30, 30, 0.35) 0%, rgba(49, 49, 49, 0.15) 100%);
+
+$height-header: 8rem;

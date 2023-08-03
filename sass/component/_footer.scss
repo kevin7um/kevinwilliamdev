@@ -1,0 +1,170 @@
+footer{
+    width: 100%;
+    padding-bottom: 4rem;
+    background-color: $dark;
+
+    .container{
+        @include flex(column, flex-start, center);
+    }
+
+    .top-area{
+        @include flex(row, flex-start, space-between);
+        width: 100%;
+        padding: 4rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+
+        .link-group{
+            .link-content{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem 0;
+                margin-bottom: 2rem;
+
+                .icon-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    flex-shrink: 0; 
+                }
+                
+                &:hover{
+                    span{
+                        color: $text-color-body;
+                    }
+                }
+            }
+        }
+    }
+    
+    .middle-area{
+        @include flex(row, flex-start, space-between);
+        width: 100%;
+        padding: 4rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+
+        .left-area,
+        .right-area{
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        .left-area{
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+            h3{
+                font-size: 1.6rem;
+            }
+            p{
+                color: $text-color-body;
+                font-weight: 600;
+            }
+        }
+        .right-area{
+            h3{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            .contato-footer{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .icon-contato-footer{
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    flex-shrink: 0; 
+                }
+            }
+        }
+    }
+
+    .bottom-area{
+        width: 100%;
+        padding: 4rem 0 2rem;
+        @include flex(row, flex-start, space-between);
+
+        .left-area{
+            span{
+                color: $white;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.6rem;
+                font-weight: 500; 
+                display: block;
+                margin-top: 2rem;
+            }
+        }
+
+        .right-area{
+            .social-group{
+                @include flex(row, center, flex-end);
+                padding: 1rem;
+                gap: 2.4rem;
+                flex: 1 0 0; 
+
+                .social-item{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: .8rem; 
+                    background: $gray;
+                    border-radius: .4rem;
+
+                    .icon-social-footer{
+                        width: 2.6rem;
+                        height: 2.6rem; 
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    span{
+                        color: $white;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 1.4rem; 
+                    }
+                    
+                    &.text{
+                        padding: 0.4rem 0.8rem; 
+                    }
+                }
+            }
+        }
+
+    }
+
+    @include responsive(800px){
+        .bottom-area{
+            flex-wrap: wrap;
+            gap: 2.4rem;
+            justify-content: center;
+        }
+        .middle-area{
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            text-align: center;
+
+            .left-area{
+                align-items: center;
+            }
+        }
+    }
+    @include responsive(600px){
+        .top-area{
+            flex-wrap: wrap;
+            gap: 2.4rem;
+        }
+        .bottom-area{
+           .right-area{
+                display: none;
+                visibility: hidden;
+                pointer-events: none;
+           }
+        }
+        
+    }
+}
