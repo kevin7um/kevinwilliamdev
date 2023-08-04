@@ -1,15 +1,12 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('.Container'),
-//     smooth: true,
-//     lerp: 0.05,
-//     class: 'is-reveal',
-//     tablet: {
-//         smooth: true,
-//     },
-//     smartphone: {
-//         smooth: true,
-//     },
-// });
+
+// // AOS Animation -------------------
+AOS.init({
+    offset: 120, 
+    delay: 300, 
+    duration: 700,
+    once: true,
+});
+//------------------
 
 // SCROLL HEADER ----------------------------------------
 const header = document.getElementById('js-header');
@@ -28,6 +25,8 @@ document.addEventListener('scroll', fixedMenu);
 
 // MENU MOBILE -----------------
 const btnMenuMobile = document.getElementById('js-btnMenuMobile');
+
+console.log(btnMenuMobile)
 
 function removeMenu(){
     btnMenuMobile.classList.remove('is-active')

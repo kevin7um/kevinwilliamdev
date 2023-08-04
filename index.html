@@ -44,15 +44,15 @@
         <section class="s-hero" id="home">
             <div class="container">
                 <div class="left-area">
-                    <div class="text-hero">
-                        <h1 class="headline">Headline</h1>
+                    <div class="text-hero" data-aos="zoom-in-up">
+                        <h1 class="headline"></h1>
                         <p class="description-hero">
                             Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
                             Risus facilisis nisl amet eu pellentesque sem congue. 
                             Sit tincidunt mauris id vitae at in magna aliquet.
                         </p>
                     </div>
-                    <div class="local-hero">
+                    <div class="local-hero" data-aos="zoom-in-up">
                         <div class="icon-local">
                             <img src="./assets/icon/localizacao.svg" alt="Icone-Localizacao" title="Icone Localizacao">
                         </div>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="right-area">
-                    <div class="illustration-hero">
+                    <div class="illustration-hero" data-aos="zoom-in-up">
                         <img src="./assets/illustration-hero.svg" alt="Ilustracao-Hero" title="Ilustracao-Hero">
                     </div>
                 </div>
@@ -69,20 +69,20 @@
         
         <section class="s-quemSou" id="sobre">
             <div class="container">
-                <div class="left-area">
+                <div class="left-area" data-aos="zoom-in-up">
                     <div class="image-sobre">
                         <img src="./assets/example-image.jpg" alt="Image-Pessoal" title="Image-Pessoal">
                     </div>
                 </div>
                 <div class="right-area">
-                    <div class="text-sobre">
+                    <div class="text-sobre" data-aos="zoom-in-up" data-aos-delay="400">
                         <h2 class="subtitle">Title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur. 
                             Arcu est eget magna hendrerit. Risus facilisis nisl amet eu pellentesque sem congue. 
                             Sit tincidunt mauris id vitae at in magna aliquet.
                         </p>
                     </div>
-                    <div class="details-sobre">
+                    <div class="details-sobre" data-aos="zoom-in-up" data-aos-delay="400">
                         <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
                         <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
                     </div>
@@ -94,7 +94,7 @@
             <div class="container">
                 <img src="./assets/circle-atuacao.png" class="bg-atuacao" alt="Circlo Ilustração" title="Circlo Ilustração">
                 <div class="left-area">
-                    <div class="text-atuacao">
+                    <div class="text-atuacao" data-aos="zoom-in-up">
                         <h2 class="subtitle">Title</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="right-area">
-                    <div class="text-atuacao">
+                    <div class="text-atuacao" data-aos="zoom-in-up">
                         <h2 class="subtitle">Title</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
@@ -117,9 +117,8 @@
         </section>
     
         <section class="s-projetos" id="projetos">
-            <!-- Adicionar as letras como background no css e as sombras como affter e before -->
             <div class="container">
-                <div class="box-bluer">
+                <div class="box-bluer" data-aos="zoom-in-up">
                     <div class="left-area">
                         <img src="./assets/illustration-project.svg" alt="Ilustracao-Projetos" title="Ilustracao-Projetos">
                     </div>
@@ -147,11 +146,11 @@
     
         <section class="s-contato" id="contato">
             <div class="container">
-                <div class="top-area">
+                <div class="top-area" data-aos="zoom-in-up">
                     <h2 class="subtitle">Title Section</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. </p>
                 </div>
-                <div class="bottom-area">
+                <div class="bottom-area" data-aos="zoom-in-up" data-aos-delay="800">
                     <div class="form-container">
                         <div class="form">
                             <div class="form-group">
@@ -284,7 +283,24 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./js/plugins.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        // // Typed Animation ----------------
+        var typed = new Typed('.headline', {
+            strings: ['Front-end Developer', 'Kevin William'],
+            typeSpeed: 150,
+            startDelay: 50,
+            backSpeed: 100,
+            smartBackspace: false,
+            loop: true,
+            backDelay: 800,
+            smartBackspace: true,
+            showCursor: false,
+        });
+        // //-----------------------------------
+    </script>
 </body>
 </html>

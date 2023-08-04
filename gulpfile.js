@@ -53,7 +53,7 @@ gulp.task('plugins-css', pluginsCss);
 
 function pluginsJs() {
     return gulp.src([
-        './js/lib/locomotive-scroll.min.js',
+        './js/lib/aos.js',
         './js/lib/particles.min.js',
         './js/lib/plugin.js',
     ])

@@ -2,7 +2,7 @@ main{
     padding-top: 8rem;
 
     @include responsive(500px){
-        padding-top: 6rem;
+        padding-top: 5rem;
     }
 }
 .s-hero{
@@ -36,6 +36,7 @@ main{
         .text-hero{
             h1{
                 color: $liner-gradient;
+                min-height: 6rem;
             }
             p{
                 color: $text-color-body;
