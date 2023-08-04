@@ -5,6 +5,11 @@
   "main": "index.js",
   "author": "Kevin William",
   "license": "MIT",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "preview": "gulp preview"
+  },
   "dependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
