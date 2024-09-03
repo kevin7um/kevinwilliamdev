@@ -2,11 +2,25 @@
 // // AOS Animation -------------------
 AOS.init({
     offset: 120, 
-    delay: 300, 
+    delay: 100, 
     duration: 700,
     once: true,
 });
 //------------------
+
+// // PRELOAD --------------------
+//     const preload = document.getElementById('preload-js')
+//     // document.documentElement.style.overflow = 'hidden';
+
+//     window.addEventListener('load', () => {
+//         setTimeout(() => {
+//             preload.style.display = 'none';
+//             // document.documentElement.style.overflow = 'scroll';
+
+//         }, 1000);
+//     })
+
+// ------------------------------
 
 // SCROLL HEADER ----------------------------------------
 const header = document.getElementById('js-header');
@@ -23,10 +37,19 @@ document.addEventListener('scroll', fixedMenu);
 
 //-------------------------
 
+// SCROLL PROJETOS ----------------
+const btnScroll = document.getElementById('btn-scroll');
+const sectionCases = document.getElementById('s-cases');
+
+if(btnScroll){
+    btnScroll.addEventListener('click', () => {
+        window.scrollTo(0, sectionCases.offsetTop)
+    });
+}
+//----------------------------------
+
 // MENU MOBILE -----------------
 const btnMenuMobile = document.getElementById('js-btnMenuMobile');
-
-console.log(btnMenuMobile)
 
 function removeMenu(){
     btnMenuMobile.classList.remove('is-active')

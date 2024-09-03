@@ -1,5 +1,6 @@
+
 main{
-    padding-top: 8rem;
+    padding-top: 7rem;
 
     @include responsive(500px){
         padding-top: 5rem;
@@ -35,14 +36,22 @@ main{
 
         .text-hero{
             h1{
-                color: $liner-gradient;
+                color: #fff;
                 min-height: 6rem;
+                text-align: left;
+
+                span{
+                    // display: block;
+                    color: $liner-gradient;
+                    min-height: 6.4rem;
+                    // font-size: 3.2rem;
+                }
             }
             p{
                 color: $text-color-body;
-                font-size: 1.8rem; 
-                text-align: justify;
+                font-size: 1.6rem; 
                 margin-top: 2rem;
+                margin-bottom: 1.5rem;
             }
         }
         .local-hero{
@@ -112,7 +121,9 @@ main{
                 text-align: centers;
 
                 .text-hero{
-                    text-align: center;
+                    h1{
+                        text-align: center;
+                    }
                     p{
                         max-width: 100%;
                         text-align: center;
@@ -179,8 +190,8 @@ main{
             gap: 1.6rem;
 
             p{
-                font-weight: 600;
-                text-align: justify
+                font-weight: 400;
+                font-size: 1.6rem;
             }
         }
         .details-sobre{
@@ -217,9 +228,6 @@ main{
     @include responsive(600px){
         .container{
             flex-direction: column;
-            .text-sobre{
-                text-align: center;
-            }
         }
     }
 
@@ -227,7 +235,6 @@ main{
         .container{
             .details-sobre{
                 flex-direction: column;
-                text-align: justify;
             }
         }
     }
@@ -259,8 +266,8 @@ main{
     .right-area{
         .text-atuacao{
             p{
-                text-align: justify;
-                margin-top: 1rem;
+                // text-align: justify;
+                margin-top: 2rem;
             }            
         }
     }
@@ -314,9 +321,7 @@ main{
     background: $dark;
     overflow: hidden;
 
-    background-image: url('../../assets/FRONT-END-DEVELOPER.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+
 
     .container{
         @include flex(row, center, center);
@@ -332,9 +337,9 @@ main{
             flex-shrink: 0; 
             z-index: 0;
             border-radius: 70rem;
-            opacity: 0.5;
-            filter: blur(150px); 
+            opacity: 1;
             background: $brand-green;
+
         }
     
         &::before{
@@ -346,12 +351,18 @@ main{
             height: 40rem;
             flex-shrink: 0; 
             z-index: 0;
-
             border-radius: 70rem;
-            opacity: 0.5;
-            filter: blur(150px); 
+            opacity: 1;
             background: $brand-cyan-green;
         }
+        
+        &::before{
+            animation: up 5s linear infinite;
+        }
+        &::after{
+            animation: down 5s linear infinite;
+        }
+        
     }
 
     .box-bluer{
@@ -365,16 +376,20 @@ main{
         flex-shrink: 0; 
         z-index: 1;
 
-        border-radius: 1.6rem;
-        background: linear-gradient(135deg, rgba(30, 30, 30, 0.35) 0%, rgba(49, 49, 49, 0.15) 100%);
-        backdrop-filter: blur(15px); 
-        border: 1px solid rgba(94, 94, 94, 0.2);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(37, 37, 37, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
 
         .left-area{
             @include flex(row, center, center);
             padding: 10.7rem 9.5rem;
             width: 100%;
-            background: $brand-cyan-green;
+            border: rgba(255, 255, 255, 0.237) 1px solid;
+            border-radius: 8px;
+            // background: $brand-cyan-green;
 
             img{
                 width: 28.1rem;
@@ -400,10 +415,18 @@ main{
             }
         }
     }
+
     @include responsive(1366px){
         background-size: 95%;
     }
     @include responsive(1150px){
+        .container{
+            &::after,
+            &::before{
+                width: 30rem;
+                height: 30rem;
+            }
+        }
         .box-bluer{
             width: 90%;
             
@@ -413,6 +436,13 @@ main{
         }
     }
     @include responsive(800px){
+        .container{
+            &::after,
+            &::before{
+                width: 25rem;
+                height: 25rem;
+            }
+        }
         .box-bluer{
             height: auto;
             flex-wrap: wrap;
@@ -421,6 +451,18 @@ main{
     @include responsive(500px){
         padding: 8rem 0;
         background-image: none;
+
+        .container{
+            &::after{
+                bottom: -10rem;
+                left: -10rem;
+            }
+            &::before{
+                top: -5rem;
+                right: -10rem;
+            }
+        }
+
         .box-bluer{
             width: 100%;
             padding: 2.5rem;
@@ -433,6 +475,19 @@ main{
                 }
             }
         }
+    }
+}
+
+.s-front{
+    width: 100%;
+    padding: 8rem 0;
+
+    .container{
+        height: 35rem;
+        background-image: url('../../assets/FRONT-END-DEVELOPER.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 90%;
     }
 }
 
@@ -450,6 +505,7 @@ main{
        h2,
        p{
             width: 100%;
+            max-width: 67rem;
             text-align: center;
        }
        p{
@@ -458,6 +514,7 @@ main{
     }
 
     .bottom-area{
+        margin-top: 2.4rem;
         .form-container{
             padding: 4rem;
             display: flex;
@@ -488,6 +545,10 @@ main{
                             margin-top: .5rem;
                             border: 0;
                             border-bottom: 1.5px solid $brand-green;
+
+                            &::placeholder{
+                                color: rgb(168, 168, 168);
+                            }
                         }
                     }
                 }
@@ -511,6 +572,7 @@ main{
         }
 
     }
+
     @include responsive(900px){
         .bottom-area{
             .form-container{

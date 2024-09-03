@@ -67,6 +67,12 @@
         text-transform: uppercase; 
 
         margin-top: 3.2rem;
+        transition: all .5s ease;
+        
+        &:hover{
+            background: $white;
+            color: $dark;
+        }
     }
 
     @include responsive(900px){
@@ -135,6 +141,25 @@
                 p{
                     text-align: justify;
                 }
+            }
+
+            #js-btn-case{
+                display: none;
+                filter: brightness(.8);
+                cursor: not-allowed;
+                span{
+                    color: $white;
+                }
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+
+                &::after{
+                    width: 100%;
+                }
+
             }
         }
 

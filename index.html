@@ -3,6 +3,8 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="icon" href="favicon.svg">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +14,40 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&family=Inter:wght@300;400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <title>Kevin William | Início</title>
+    <!-- Primary Meta Tags -->
+    <title>Kevin William | Front-end Developer</title>
+    <meta name="title" content="Kevin William | Front-end Developer" />
+    <meta name="description" content="Meu nome é Kevin William e sou desenvolvedor em constante evolução, focado em criar produtos e soluções para usuários da web." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kevinwilliam.com.br/" />
+    <meta property="og:title" content="Kevin William | Front-end Developer" />
+    <meta property="og:description" content="Meu nome é Kevin William e sou desenvolvedor em constante evolução, focado em criar produtos e soluções para usuários da web." />
+    <meta property="og:image" content="./assets/ImagePreview.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kevinwilliam.com.br/" />
+    <meta property="twitter:title" content="Kevin William | Front-end Developer" />
+    <meta property="twitter:description" content="Meu nome é Kevin William e sou desenvolvedor em constante evolução, focado em criar produtos e soluções para usuários da web." />
+    <meta property="twitter:image" content="./assets/ImagePreview.jpg" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
 </head>
 <body id="body">
+    <div class="preload" id="preload-js">
+        <div class="spinner"></div>
+    </div>
     <div class="overlay"></div>
+    
     <header class="header mobile-header" id="js-header">
         <div class="container">
             <div class="image">
-                <img src="./assets/logo-white.svg" alt="Logo-Header" title="Logo-Header" class="logo">
+                <img src="./assets/logo-white.svg" alt="Logo-Header" class="logo">
             </div>
             <div class="menu">
                 <nav>
@@ -31,7 +58,12 @@
                         <li><a href="#contato" id="#contato">Entre em Contato</a></li>
                     </ul>
                 </nav>
-                <button class="btn-call-to-action">Orçamento</button>
+                <a 
+                    href="https://wa.me/5533984283269?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!" 
+                    class="btn-call-to-action"
+                >
+                    Orçamento
+                </a>
             </div>
             <button class="btnMenuMobile" id="js-btnMenuMobile">
                 <img src="./assets/icon/ButtonMenuMobile.svg" class="open" alt="Menu Mobile">
@@ -45,23 +77,25 @@
             <div class="container">
                 <div class="left-area">
                     <div class="text-hero" data-aos="zoom-in-up">
-                        <h1 class="headline"></h1>
+                        <p>Olá, seja bem vindo(a)!</p>
+                        <h1>
+                            <span class="headline"></span>
+                        </h1>
                         <p class="description-hero">
-                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
-                            Risus facilisis nisl amet eu pellentesque sem congue. 
-                            Sit tincidunt mauris id vitae at in magna aliquet.
+                            Venha conhecer um pouco do meu trabalho como desenvolvedor focado em produtos para 
+                                web.
                         </p>
                     </div>
                     <div class="local-hero" data-aos="zoom-in-up">
                         <div class="icon-local">
-                            <img src="./assets/icon/localizacao.svg" alt="Icone-Localizacao" title="Icone Localizacao">
+                            <img src="./assets/icon/localizacao.svg" alt="Icone-Localizacao">
                         </div>
                         <span>Minas Gerais - Brasil</span>
                     </div>
                 </div>
                 <div class="right-area">
                     <div class="illustration-hero" data-aos="zoom-in-up">
-                        <img src="./assets/illustration-hero.svg" alt="Ilustracao-Hero" title="Ilustracao-Hero">
+                        <img src="./assets/illustration-hero.svg" alt="Ilustracao-Hero" title="Dev Frontend">
                     </div>
                 </div>
             </div>
@@ -71,20 +105,22 @@
             <div class="container">
                 <div class="left-area" data-aos="zoom-in-up">
                     <div class="image-sobre">
-                        <img src="./assets/example-image.jpg" alt="Image-Pessoal" title="Image-Pessoal">
+                        <img src="./assets/example-image.jpg" alt="Image-Pessoal" title="Kevin William">
                     </div>
                 </div>
                 <div class="right-area">
                     <div class="text-sobre" data-aos="zoom-in-up" data-aos-delay="400">
-                        <h2 class="subtitle">Title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. 
-                            Arcu est eget magna hendrerit. Risus facilisis nisl amet eu pellentesque sem congue. 
-                            Sit tincidunt mauris id vitae at in magna aliquet.
+                        <h2 class="subtitle">Sobre mim</h2>
+                        <p>
+                            Meu nome é Kevin William e, há alguns anos, tenho me dedicado ao estudo e imersão no universo da programação. Entre as diversas áreas, decidi focar na criação de interfaces e experiência dos usuários da web, alinhando Design, Desenvolvimento e Interação.
+                        </p>
+                        <p>
+                            Tenho formação em Técnico em Informática e, atualmente, cursando Sistema da Informação pelo IFSEMG.
                         </p>
                     </div>
                     <div class="details-sobre" data-aos="zoom-in-up" data-aos-delay="400">
-                        <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
-                        <span>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit.</span>
+                        <span>Design de sistemas alinhado com desenvolvimento estratégico</span>
+                        <span>Interações fluidas que proporcionam experiencias únicas</span>
                     </div>
                 </div>
             </div>
@@ -95,25 +131,27 @@
                 <img src="./assets/circle-atuacao.png" class="bg-atuacao" alt="Circlo Ilustração" title="Circlo Ilustração">
                 <div class="left-area">
                     <div class="text-atuacao" data-aos="zoom-in-up">
-                        <h2 class="subtitle">Title</h2>
+                        <h2 class="subtitle">Desenvolvimento</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
-                            Risus facilisis nisl amet eu pellentesque sem congue. 
-                            Sit tincidunt mauris id vitae at in magna aliquet.
+                            Estou constantemente buscando inovação e aprimoramento das minhas habilidades para acompanhar as tendências em design e tecnologia. 
+                            Meu compromisso é entregar projetos de alta qualidade, que atendam às necessidades dos clientes e superem suas expectativas.
                         </p>
                     </div>
                 </div>
                 <div class="right-area">
                     <div class="text-atuacao" data-aos="zoom-in-up">
-                        <h2 class="subtitle">Title</h2>
+                        <h2 class="subtitle">Interação</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
-                            Risus facilisis nisl amet eu pellentesque sem congue. 
-                            Sit tincidunt mauris id vitae at in magna aliquet.
+                            Meu objetivo é proporcionar interações fluidas e cativantes, garantindo que cada usuário desfrute de uma experiência única e memorável.
+                            Aplicando os conceitos de animações suaves e intuitivas em projetos.
                         </p>
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <section class="s-front">
+            <div class="container"></div>
         </section>
     
         <section class="s-projetos" id="projetos">
@@ -124,12 +162,9 @@
                     </div>
                     <div class="right-area">
                         <div class="text-projetos">
-                            <h2 class="subtitle white">Projetos</h2>
-                            <h3>Subtitle</h3>
+                            <h2 class="subtitle white">Cases e Projetos</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. 
-                                Risus facilisis nisl amet eu pellentesque sem congue. 
-                                Sit tincidunt mauris id vitae at in magna aliquet.
+                                Veja alguns projetos desenvolvidos por mim ao longo desses anos de aprendizado.
                             </p>
                         </div>
                         <a href="./pages/projetos/index.html" class="btn-primary">
@@ -147,8 +182,8 @@
         <section class="s-contato" id="contato">
             <div class="container">
                 <div class="top-area" data-aos="zoom-in-up">
-                    <h2 class="subtitle">Title Section</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Arcu est eget magna hendrerit. </p>
+                    <h2 class="subtitle">Mande-me uma mensagem!</h2>
+                    <p>Fique a vontade para me enviar uma mensagem, ou se preferir, entre em contato por meio dos canais de comunicação abaixo.</p>
                 </div>
                 <div class="bottom-area" data-aos="zoom-in-up" data-aos-delay="800">
                     <div class="form-container">
@@ -173,8 +208,7 @@
                                     <textarea 
                                         name="msg" 
                                         id="mensage"
-                                        placeholder="Olá, eu estou precisando de seus serviços de desenvolvimento de websites para Company X. Poderia entrar em contato para discutir sobre?">
-                                    </textarea>
+                                        placeholder="Olá, gostaria de discutir uma ideia de projeto para minha empresa com você..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -195,84 +229,59 @@
         <div class="container">
             <div class="top-area">
                 <div class="link-group">
-                    <a href="#" class="link-content">
+                    <a href="https://instagram.com/kevinwilliam.dev" class="link-content" target="_blank">
                         <div class="icon-link">
                             <img src="./assets/icon/InstagramLogo.svg" alt="Icone-Instagram" title="Icone-Instagram">
                         </div>
                         <span class="t-link">Instagram</span>
                     </a>
-                    <a href="#" class="link-content">
+                </div>
+                <div class="link-group">
+                    <a href="https://github.com/kevin7um" class="link-content" target="_blank">
+                        <div class="icon-link">
+                            <img src="./assets/icon/GithubLogo.svg" alt="Icone-Github" title="Icone-Github">
+                        </div>
+                        <span class="t-link">Github</span>
+                    </a>
+                </div>
+                <div class="link-group">
+                    <a href="https://linkedin.com/in/kevinwilliamag" class="link-content" target="_blank">
                         <div class="icon-link">
                             <img src="./assets/icon/LinkedinLogo.svg" alt="Icone-Linkedin" title="Icone-Linkedin">
                         </div>
                     <span class="t-link">Linkedin</span>
                     </a>
                 </div>
-                <div class="link-group">
-                    <a href="#" class="link-content">
-                        <div class="icon-link">
-                            <img src="./assets/icon/GithubLogo.svg" alt="Icone-Github" title="Icone-Github">
-                        </div>
-                        <span class="t-link">Github</span>
-                    </a>
-                    <a href="#" class="link-content">
-                        <div class="icon-link">
-                            <img src="./assets/icon/ReadCvLogo.svg" alt="Icone-Resume" title="Icone-Resume">
-                        </div>
-                        <span class="t-link">Resume.pdf</span>
-                    </a>
-                </div>
-                <div class="link-group">
-                    <a href="#" class="link-content">
-                        <div class="icon-link">
-                            <img src="./assets/icon/ChatTeardropText.svg" alt="Icone-Chat" title="Icone-Chat">
-                        </div>
-                        <span class="t-link">Contato Profissional</span>
-                    </a>
-                </div>
             </div>
-            <div class="middle-area">
-                <div class="left-area">
-                    <img src="./assets/logo-white.svg" alt="Logo-Footer" title="K">
-                    <h3>Kevin William</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. </p>
-                    <p>Sit tincidunt mauris id vitae at in magna aliquet.</p>
-                </div>
-                <div class="right-area">
-                    <h3>Risus facilisis nisl amet</h3>
-                    <div class="contato-footer">
-                        <div class="icon-contato-footer">
-                            <img src="./assets/icon/PaperPlaneTilt.svg" alt="Icone-Mensagem" title="Icone-Mensagem">
-                        </div>
-                        <span class="t-link">contato@kevinwilliam.com.br</span>
-                    </div>
-                </div>
-            </div>
+           
             <div class="bottom-area">
                 <div class="left-area">
                     <img src="./assets/logo-completa-gradient.svg" alt="Logo-Nome" alt="Kevin William">
-                    <span>Portifólio Kevin William ® 2023</span>
+                    <span>Portifólio Kevin William ® 2024</span>
                 </div>
                 <div class="right-area">
                     <div class="social-group">
-                        <a href="#"  class="social-item text">
+                        <a href="https://instagram.com/kevinwilliam.dev"  class="social-item text" target="_blank">
                             <div class="icon-social-footer">
                                 <img src="./assets/icon/InstagramLogo.svg" alt="Icone-Instagram" title="Icone-Instagram">
                             </div>
                             <span>@kevinwilliam.dev</span>
                         </a>
-                        <a href="#" class="social-item text">
+                        <a 
+                            href="https://wa.me/5533984283269?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!" 
+                            class="social-item text" 
+                        >
                             <div class="icon-social-footer">
                                 <img src="./assets/icon/PlayContrate.svg" alt="Icone-Contrate" title="Icone-Contrate">
                             </div>
                             <span>Contrate-me</span>
                         </a>
-                        <a href="#" class="social-item">
+                        <a href="https://linkedin.com/in/kevinwilliamag" class="social-item" target="_blank">
                             <div class="icon-social-footer">
                                 <img src="./assets/icon/LinkedinLogo.svg" alt="Icone-Linkedin" title="Icone-Linkedin">
                             </div>
                         </a>
-                        <a href="#" class="social-item">
+                        <a href="https://github.com/kevin7um" class="social-item" target="_blank">
                             <div class="icon-social-footer">
                                 <img src="./assets/icon/GithubLogo.svg" alt="Icone-Github" title="Icone-Github">
                             </div>
@@ -290,15 +299,15 @@
     <script>
         // // Typed Animation ----------------
         var typed = new Typed('.headline', {
-            strings: ['Front-end Developer', 'Kevin William'],
+            strings: ['Kevin William', 'Front-end Dev'],
             typeSpeed: 150,
             startDelay: 50,
-            backSpeed: 100,
-            smartBackspace: false,
+            backSpeed: 50,
+            smartBackspace: true,
             loop: true,
             backDelay: 800,
             smartBackspace: true,
-            showCursor: false,
+            showCursor: true,
         });
         // //-----------------------------------
     </script>
